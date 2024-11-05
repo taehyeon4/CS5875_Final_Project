@@ -1,6 +1,7 @@
 # CS5875_Final_project
 
 Dataset: https://www.kaggle.com/datasets/debashishsau/aslamerican-sign-language-aplhabet-dataset/data
+Pytorch CNN: https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/4e865243430a47a00d551ca0579a6f6c/cifar10_tutorial.ipynb
 
 1) Download the entire dataset onto google drive
 2) make a subset of the larger dataset for use to get smaller dataset for us to do training / initial testing on
