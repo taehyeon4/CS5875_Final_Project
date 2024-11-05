@@ -8,3 +8,17 @@ Dataset: https://www.kaggle.com/datasets/debashishsau/aslamerican-sign-language-
 4) we can start testing with some of our own images, by passing in some more of images that we take ourselves
 5) work on taking the images and converting it into proper words and a proper sentence
 6) convert it into a live video model
+
+
+
+for halfway point (nov. 11th) - 
+1) motivation, method, premliminary experiments, future work - make a google document and write it up /  write up with everything we are planning to do
+2) show training and loss for the smaller dataset and how it is going to scale up for when we train in google colab with GPU. talk about how GPU will help us get faster
+3) do research on taking letters and spaces and converting that into words and sentences
+4) what is left in our project
+ - training the big dataset through google colab
+ - functioning conversion from images to sentences
+ - finally, we will do videos to sentences
+
+Extra (if time permits): 
+ - if we have enough bandwith we can work on sentence correction, fixing typos, and proper grammar
