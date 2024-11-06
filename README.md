@@ -1,8 +1,15 @@
 # Applied Machine Learning (CS5875) - Final Project
 
+Mid-way Write Up: [https://docs.google.com/document/d/1dhnugiaBpyexRTNT6Ghatg2bwr8zQ5svmRu-R_yIhbk/edit?usp=sharing](https://docs.google.com/document/d/1dnPzyLG72VDvTBUiUiyWv12h3RLcgTJV-Uqc2XPTmUI/edit?usp=sharing)
+
+Final Write Up: https://docs.google.com/document/d/1dhnugiaBpyexRTNT6Ghatg2bwr8zQ5svmRu-R_yIhbk/edit?usp=sharing
+
 Dataset: https://www.kaggle.com/datasets/debashishsau/aslamerican-sign-language-aplhabet-dataset/data
 
-*explain what the minidataset is and why we made it*
+The dataset is very large (4.5 gb) and hence for prototyping our code, we made a *MiniData* set where we sampled 10 random images from each letter in order to train on local. Based on the reuslts of this, we tweaked our code and understood our convergence values (F1, Confusion Matrix). 
+
+
+Workflow: 
 
 
 Pytorch CNN: https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/4e865243430a47a00d551ca0579a6f6c/cifar10_tutorial.ipynb
