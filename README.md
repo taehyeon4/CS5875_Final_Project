@@ -16,7 +16,7 @@ This project currently implements a real-time system for translating sign langua
 ## Prerequisites
 Before you begin, ensure you have the following installed:
 - Python 3.8 or higher
-- pip (Python package manager)
+- pip (python package manager)
 
 ## Installation and Setup
 
@@ -33,8 +33,8 @@ cd CS5875_Final_Project
 To isolate dependencies, please create a venv:
 ```bash
 python -m venv venv
-source venv/bin/activate
-venv\Scripts\activate
+source venv/bin/activate (mac/linux)
+venv\Scripts\activate (windows)
 ```
 
 ### 3. Install Dependencies
