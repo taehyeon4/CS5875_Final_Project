@@ -1,0 +1,6 @@
+.cs5785
+*.pyc
+vision/models/*.cfg
+vision/models/*.weights
+vision/**/*.jpg
+**/.DS_Store
