@@ -1,6 +1,13 @@
-.cs5785
+# .cs5785
 *.pyc
 vision/models/*.cfg
 vision/models/*.weights
 vision/**/*.jpg
 **/.DS_Store
+
+.env
+.ipynb_checkpoints/
+.vscode/
+*.py[cod]
+.DS_Store
+__pycache__/
