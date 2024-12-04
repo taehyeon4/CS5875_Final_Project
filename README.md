@@ -52,7 +52,7 @@ Install all required Python packages using `pip` and download the YOLO models:
 
 ```bash
 pip install -r requirements.txt
-bash ./vision/models/download-models.sh
+cd vision/models && bash download-models.sh && cd -
 ```
 
 ### 4. Run the Project
