@@ -81,6 +81,10 @@ class SignLanguageDetector:
         # Process buffer and return sentence if complete
         return self._process_buffer()
 
+    def get_current_sentence(self) -> str:
+        """Get the current sentence."""
+        return "".join(self.current_sentence)
+
     def _clean_buffer(self, current_time: float) -> None:
         """Remove detections older than char_buffer_duration."""
         while (

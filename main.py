@@ -1,7 +1,9 @@
 from src import nlpmodule, cvmodule
 
 # computer vision part
-# cvinstance = cvmodule()
+cvinstance = cvmodule.CVModule()
+curr_sentence = cvinstance.run()
+print(f"Current sentence: {curr_sentence}")
 
 # temp final string
 final_string = "my name is akhil and i fucking hate this pizza it tastes so ass"

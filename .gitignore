@@ -1,8 +1,8 @@
 # .cs5785
 *.pyc
-vision/models/*.cfg
-vision/models/*.weights
-vision/**/*.jpg
+src/vision/models/*.cfg
+src/vision/models/*.weights
+src/vision/**/*.jpg
 **/.DS_Store
 
 .env

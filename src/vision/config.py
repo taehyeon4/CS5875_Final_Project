@@ -4,8 +4,8 @@ from typing import Dict
 
 @dataclass
 class YOLOConfig:
-    config_path: str = "vision/models/cross-hands.cfg"
-    weights_path: str = "vision/models/cross-hands.weights"
+    config_path: str = "src/vision/models/cross-hands.cfg"
+    weights_path: str = "src/vision/models/cross-hands.weights"
     size: int = 416
     confidence: float = 0.5
     threshold: float = 0.3
@@ -14,20 +14,20 @@ class YOLOConfig:
     NETWORK_CONFIGS: Dict[str, Dict[str, str]] = field(
         default_factory=lambda: {
             "normal": {
-                "config": "vision/models/cross-hands.cfg",
-                "weights": "vision/models/cross-hands.weights",
+                "config": "src/vision/models/cross-hands.cfg",
+                "weights": "src/vision/models/cross-hands.weights",
             },
             "tiny": {
-                "config": "vision/models/cross-hands-tiny.weights",
-                "weights": "vision/models/cross-hands-tiny.cfg",
+                "config": "src/vision/models/cross-hands-tiny.weights",
+                "weights": "src/vision/models/cross-hands-tiny.cfg",
             },
             "prn": {
-                "config": "vision/models/cross-hands-tiny-prn.cfg",
-                "weights": "vision/models/cross-hands-tiny-prn.weights",
+                "config": "src/vision/models/cross-hands-tiny-prn.cfg",
+                "weights": "src/vision/models/cross-hands-tiny-prn.weights",
             },
             "v4-tiny": {
-                "config": "vision/models/cross-hands-yolov4-tiny.cfg",
-                "weights": "vision/models/cross-hands-yolov4-tiny.weights",
+                "config": "src/vision/models/cross-hands-yolov4-tiny.cfg",
+                "weights": "src/vision/models/cross-hands-yolov4-tiny.weights",
             },
         }
     )
@@ -35,7 +35,7 @@ class YOLOConfig:
 
 @dataclass
 class SignLanguageConfig:
-    model_path: str = "vision/models/sign_language.pth"
+    model_path: str = "src/vision/models/sign_language.pth"
     num_classes: int = 29
     input_size: int = 128
 
