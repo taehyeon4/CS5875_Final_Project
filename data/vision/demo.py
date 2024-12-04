@@ -44,11 +44,27 @@ class SignLanguageDetector:
                 predicted_letter = self.sign_classifier.predict(hand_image)
                 self._draw_detection(frame, x, y, w, h, predicted_letter, conf)
 
+            # Draw the current sentence on the frame
+            self._draw_sentence(frame)
+
             return frame, predicted_letter
 
         except Exception as e:
             logger.error(f"Frame processing failed: {e}")
             return frame, None
+
+    def _draw_sentence(self, frame: np.ndarray) -> None:
+        """Draw the current sentence on the frame."""
+        sentence = "".join(self.current_sentence)
+        cv2.putText(
+            frame,
+            sentence,
+            (10, frame.shape[0] - 10),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            1,
+            (0, 255, 0),
+            2,
+        )
 
     def process_character(self, predicted_char: Optional[str]) -> Optional[str]:
         """Process a predicted character and return completed sentence if available."""
@@ -80,7 +96,12 @@ class SignLanguageDetector:
 
         # Count only the characters, ignoring timestamps
         char_counts = Counter(char for _, char in self.char_buffer)
-        most_common_char, _ = char_counts.most_common(1)[0]
+        most_common_char, count = char_counts.most_common(1)[0]
+
+        if count < self.config.min_detection_count:
+            return None
+
+        self.char_buffer.clear()
 
         if most_common_char in ["nothing", "unknown"]:
             return None
