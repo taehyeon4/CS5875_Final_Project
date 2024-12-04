@@ -9,5 +9,10 @@ src/vision/**/*.jpg
 .ipynb_checkpoints/
 .vscode/
 *.py[cod]
+*.mp3
 .DS_Store
 __pycache__/
+
+.venv
+
+audio_logs/
