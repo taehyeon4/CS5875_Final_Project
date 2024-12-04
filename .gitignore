@@ -1,7 +1,7 @@
 # .cs5785
 *.pyc
-vision/models/*.cfg
-vision/models/*.weights
+data/vision/models/*.cfg
+data/vision/models/*.weights
 vision/**/*.jpg
 **/.DS_Store
 
