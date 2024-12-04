@@ -57,7 +57,7 @@ python main.py --input <path_to_input>
 
 ## Write-Ups
 Please reference our midway and final write ups: 
-- [Midway](https://docs.google.com/document/d/1dnPzyLG72VDvTBUiUiyWv12h3RLcgTJV-Uqc2XPTmUI/edit?usp=sharing)
+- [Midway](https://github.com/taehyeon4/CS5875_Final_Project/blob/main/writeups/Midway%20Write%20Up.pdf)
 - [Final](https://docs.google.com/document/d/1dnPzyLG72VDvTBUiUiyWv12h3RLcgTJV-Uqc2XPTmUI/edit?usp=sharing)
 
 The original dataset that we used is from [Kaggle](https://www.kaggle.com/datasets/debashishsau/aslamerican-sign-language-aplhabet-dataset/data). It is very large (4.5 gb) and hence for prototyping our code, we made a *MiniData* set where we sampled a varying number of random images from each letter in order to train. Based on the reuslts of the current model, we decided how to scale up the model by understanding our convergence values (F1, Confusion Matrix). 
