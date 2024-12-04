@@ -45,4 +45,5 @@ class DetectorConfig:
     yolo: YOLOConfig = field(default_factory=YOLOConfig)
     sign_language: SignLanguageConfig = field(default_factory=SignLanguageConfig)
     predictions_dir: str = "predictions"
+    char_buffer_duration: float = 3.0  # Duration in seconds to buffer characters
     NETWORK_CONFIGS: Dict = field(default_factory=dict)
