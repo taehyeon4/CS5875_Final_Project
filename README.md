@@ -49,11 +49,11 @@ To execute the pipeline, use the following command:
 python main.py
 ```
 
-### 4 (cont). Run the Project w/ pre-existing video
+<!-- ### 4 (cont). Run the Project w/ pre-existing video
 To execute the pipeline with a video (mp4), use the following command:
 ```bash
 python main.py --input <path_to_input>
-```
+``` -->
 
 ## Write-Ups
 Please reference our midway and final write ups: 
