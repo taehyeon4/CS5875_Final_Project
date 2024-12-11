@@ -35,7 +35,7 @@ class YOLOConfig:
 
 @dataclass
 class SignLanguageConfig:
-    model_path: str = "src/vision/models/sign_language.pth"
+    model_path: str = "src/vision/models/sign_language_model_best.pth"
     num_classes: int = 29
     input_size: int = 128
 
@@ -46,5 +46,5 @@ class DetectorConfig:
     sign_language: SignLanguageConfig = field(default_factory=SignLanguageConfig)
     predictions_dir: str = "predictions"
     char_buffer_duration: float = 3.0  # Duration in seconds to buffer characters
-    min_detection_count: int = 5
+    min_detection_count: int = 10
     NETWORK_CONFIGS: Dict = field(default_factory=dict)

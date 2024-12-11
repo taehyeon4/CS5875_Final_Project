@@ -16,3 +16,4 @@ __pycache__/
 .venv
 
 audio_logs/
+data/
